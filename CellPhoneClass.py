@@ -1,24 +1,20 @@
-import random
-
 class CellPhone:
 
-    def __init__(self,ma,mo,rp):
-        self.__manufact = ma
-        self.__model = mo
-        self.__retail_price = rp
 
-    def set_ma(self,ma):
-        self.__manufact = ma
-
-    def set_mo(self,mo):
-        self.__model = mo
-    
-    def set_rp(self,rp):
-        self.__retail_price = rp
-    def get_ma(self):
-        return self.__ma
-    def get_mo(self):
-        return self.__mo
-    def get_rp(self):
-        return self.__rp
+    def __init__(self, manufacturer,model_number, retail_price):
+        self.__manufact = manufacturer
+        self.__model = model_number
+        self.retail_price = retail_price
+    def set_manufact (self, manufacturer):
+        self.__manufact = manufacturer
+    def set_model(self, model_number):      
+        self.__model = model_number
+    def set_retail_price(self, retail_price):
+        self.__retail_price = retail_price
+    def get_manufact (self):
+        return self.__manufact
+    def get_model(self):
+        return self.__model
+    def get_retail_price(self):
+        return self.__retail_price
         
